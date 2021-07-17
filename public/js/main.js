@@ -1,4 +1,21 @@
-function ChangeContrast() {
-    var bg = document.getElementById("main-background");
-    console.log(bg.src)
+let barProgress = document.getElementById('bar-progress');
+
+let sections = document.getElementsByTagName('section');
+
+let clicked = 1;
+
+setProgress(clicked / sections.length);
+
+function nextPage() {
+    clicked++;
+    setProgress(clicked / sections.length);
+}
+
+function prevPage() {
+    clicked--;
+    setProgress(clicked / sections.length);
+}
+
+function setProgress(progress) {
+    barProgress.style.width = (progress * 100) + '%';
 }

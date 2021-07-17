@@ -14,13 +14,20 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: aliceblue;
+}
+
 html, body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     scroll-snap-type: y mandatory;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -39,6 +46,31 @@ section .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1 1 auto;
+}
+
+section .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0 1 auto;
+    width: 100vw;
+    margin: 20px;
+}
+
+section .actions .button {
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 8px;
+    color: aliceblue;
+    transition: 1s;
+}
+
+section .actions .button:hover {
+    background-color: lightskyblue;
+    transition: 1s;
+    color: black;
 }
 
 section .content h1 {
@@ -61,6 +93,16 @@ section .content h1 {
     background-color: blue;
     background-image: url("../assets/images/4KBackground.png");
     background-size: cover;
+}
+
+#bar-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 8px;
+    background-color: grey;
+    z-index: 99;
 }
 
 /* OLD */
