@@ -59,18 +59,21 @@ section .actions {
     margin: 20px;
 }
 
-section .actions .button {
-    border: 3px solid white;
-    border-radius: 5px;
-    padding: 8px;
-    color: aliceblue;
-    transition: 1s;
+section .actions .animate {
+    animation: actions-moving ease-in-out 1s infinite;
 }
 
-section .actions .button:hover {
-    background-color: lightskyblue;
-    transition: 1s;
-    color: black;
+@keyframes actions-moving {
+    0%, 100% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+section .actions a:hover {
+    cursor: pointer;
 }
 
 section .content h1 {

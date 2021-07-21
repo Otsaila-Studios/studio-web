@@ -4,7 +4,7 @@ let sections = document.getElementsByTagName('section');
 
 let clicked = 1;
 
-setProgress(clicked / sections.length);
+// setProgress(clicked / sections.length);
 
 function nextPage() {
     clicked++;
