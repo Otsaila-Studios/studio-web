@@ -16,7 +16,10 @@
         <section class="one">
             <a id="start"></a>
             <div class="content">
-                
+                <!-- <video loop muted autoplay>
+                    <source src="./public/video-bg.mp4" type="video/mp4">
+                </video> -->
+                <img class="logo" src="./public/assets/icon/LogoBlanc.png" alt="Logo">
             </div>
             <div class="actions">
                 <a class="animate" href="#about" onclick="nextPage()">
@@ -28,12 +31,15 @@
         <section class="two">
             <a id="about"></a>
             <div class="content">
-                <h1>About</h1>
+                <!-- <h1>About</h1> -->
 
-                <iframe style="padding: 30px 0;" width="854" height="480" src="https://www.youtube.com/embed/6dTbWPnR2qY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/6dTbWPnR2qY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <h1>Expire</h1>
-                <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbis, luctus siiam aliquam sit amet neque vel ultricies. Nulla ut ullamcorper massa. Pellentesque dictum lobortis eros, egestas sodales ante dapibus nec.</p>
+                <p class="info">
+                    Nunc tristique urna justo, eu varius dolor eleifend nec. Nullam faucibus, velit ut luctus commodo, lorem ex venenatis lorem, vitae tincidunt orci quam ut diam. Aenean tristique nisi ac dui pharetra, vitae dignissim nibh sodales. Nulla facilisi. Proin in sem eu ante gravida lacinia. Vestibulum lobortis arcu ut lectus suscipit pretium. Phasellus ut libero non tellus dignissim laoreet.
+                </p>
+
+                
             </div>
             <div class="actions">
                 <a class="animate" href="#start" onclick="prevPage()">
@@ -48,18 +54,97 @@
         <section class="three">
             <a id="social-media"></a>
             <div class="content">
-                <h1>Social Media</h1>
+
+                <div>
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="./public/assets/images/gallery/gallery1.jpg" alt="Gallery Image 1">
+                          <div class="text">Caption One</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="./public/assets/images/gallery/gallery2.png" alt="Gallery Image 2">
+                          <div class="text">Caption Two</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="./public/assets/images/gallery/gallery3.jpg" alt="Gallery Image 3">
+                          <div class="text">Caption Three</div>
+                        </div>
+                        <div class="mySlides fade">
+                          <div class="numbertext">4 / 4</div>
+                          <img src="./public/assets/images/gallery/gallery4.jpg" alt="Gallery Image 4">
+                          <div class="text">Caption Four</div>
+                        </div>
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      
+                      <!-- The dots/circles -->
+                      <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                      </div>
+                </div>
+                
             </div>
             <div class="actions">
-                <a class="button" href="#about" onclick="prevPage()">ABOUT</a>
-                <a class="button" href="#development" onclick="nextPage()">DEVELOPMENT</a>
+                <a class="animate" href="#about">
+                    <span class="material-icons-two-tone">arrow_circle_up</span>
+                </a>
+                <a class="animate" href="#development">
+                    <span class="material-icons-two-tone">arrow_circle_down</span>
+                </a>
             </div>
         </section>
         
         <section class="four">
             <a id="development"></a>
             <div class="content">
-                <h1>Development</h1>
+                <!-- <h1>press kitllllllllll</h1> -->
+
+                <div class="press-kit-container">
+                    <h2>PRESS KIT</h2>
+                    <p>For screenshots and other promotional content please check out our press kit.</p>
+                    <!-- <div> -->
+                        <a class="button" href="https://drive.google.com/drive/folders/1qFXFo0QrGrcFEGesISeOesg1AiOjydd8?usp=sharing" target="_about">SEE MORE</a>
+                    <!-- </div> -->
+                </div>
+
+                <div class="countdown-container">
+
+                    <h2>RELEASE COUNTDOWN</h2>
+
+                    <div class="cols">
+                        <div class="col">
+                            <p class="big-text" id="days"></p>
+                            <span>days</span>
+                        </div>
+                        <div class="col">
+                            <p class="big-text" id="hours"></p>
+                            <span>hours</span>
+                        </div>
+                        <div class="col">
+                            <p class="big-text" id="mins"></p>
+                            <span>minutes</span>
+                        </div>
+                        <div class="col">
+                            <p class="big-text" id="seconds"></p>
+                            <span>seconds</span>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
             <div class="actions">
                 <a class="button" href="#social-media" onclick="prevPage()">SOCIAL MEDIA</a>
